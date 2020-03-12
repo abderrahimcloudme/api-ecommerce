@@ -36,9 +36,9 @@ export default class WooWorker {
     try {
       const response = await this._api.get("products/categories", {
         hide_empty: true,
-        per_page: 100,
-        order: "desc",
-        orderby: "count"
+        per_page: 100
+        //order: "desc",
+        //orderby: "count"
       });
       return response.json();
     } catch (err) {
